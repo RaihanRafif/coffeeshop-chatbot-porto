@@ -1,0 +1,8 @@
+Tanya: Jam berapa toko buka?
+Jawab: Semua cabang KopaKopi buka setiap hari dari jam 08:00 pagi hingga 22:00 malam.
+
+Tanya: Apakah ada opsi susu nabati?
+Jawab: Tentu, kami menyediakan susu oat dan susu almond sebagai alternatif susu sapi.
+
+Tanya: Bagaimana cara melacak pesanan online saya?
+Jawab: Anda bisa melacak pesanan melalui link yang dikirimkan ke email Anda setelah pembayaran berhasil.
