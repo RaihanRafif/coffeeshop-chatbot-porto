@@ -89,7 +89,7 @@ const upload = multer({ storage: storage, fileFilter: fileFilter });
 // --- API ENDPOINTS ---
 const ADMIN_PASSWORD = "captainrr12"; // Change this!
 
-app.post('/api/upload', upload.single('knowledgeFile'), async (req, res) => {
+app.post('/api-coffee/upload', upload.single('knowledgeFile'), async (req, res) => {
   const { password } = req.body;
   const file = req.file;
 
@@ -117,7 +117,7 @@ app.post('/api/upload', upload.single('knowledgeFile'), async (req, res) => {
   }
 });
 
-app.post('/api/chat', async (req, res) => {
+app.post('/api-coffee/chat', async (req, res) => {
   const { question, history = [] } = req.body;
   if (!question) return res.status(400).json({ error: 'Question is required' });
 
@@ -168,7 +168,7 @@ app.post('/api/chat', async (req, res) => {
     res.end();
 
   } catch (error) {
-    console.error('Error in /api/chat stream:', error);
+    console.error('Error in /api-coffee/chat stream:', error);
     if (!res.headersSent) {
       res.status(500).json({ error: 'An error occurred on the server.' });
     }
@@ -178,7 +178,7 @@ app.post('/api/chat', async (req, res) => {
 
 
 // --- NEW: API ENDPOINT TO GET ALL DATA --- (Final Correction)
-app.get('/api/data', async (req, res) => {
+app.get('/api-coffee/data', async (req, res) => {
     try {
         console.log('Fetching all records from Pinecone index...');
         
