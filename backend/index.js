@@ -176,7 +176,6 @@ app.post('/api-coffee/chat', async (req, res) => {
   }
 });
 
-
 // --- NEW: API ENDPOINT TO GET ALL DATA --- (Final Correction)
 app.get('/api-coffee/data', async (req, res) => {
     try {
@@ -231,7 +230,6 @@ app.get('/api-coffee/data', async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch data from the database.' });
     }
 });
-
 
 const PORT = 3001;
 app.listen(PORT, () => {
